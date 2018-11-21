@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX</title>
+</head>
+<body>
+<br>
+<strong>Leave a Comment</strong><br><br>
+
+<form action="/comment" method="post">
+  
+  <input type="text" name="comment"><br>
+  
+  <input type="submit" value="Submit">
+</form>
+<br>
+<strong>Last comments:</strong><br><br>
+<ul>
+	
+	{{range .}}
+		<li>{{.Content}}</li>
+    	<ul>
+    		<li>Time: {{.Hour}}</li> 
+    		<li>Ip: {{.Ip}}</li><br>
+    	</ul>
+	{{end}}
+
+</ul>
+
+
+</body>
+</html>
