@@ -26,7 +26,7 @@ func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/comment", comment)
 	fmt.Println("Server running in port 8080")
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func index(w http.ResponseWriter, _ *http.Request) {
