@@ -1,6 +1,6 @@
 # Comments-in-Go
 
-Simple app to leave comments created completely in Go, running on a EC2 instance on AWS.
+Simple app to leave comments created completely in Go, running on a EC2 instance on AWS [status: disabled because of billing].
 
 URL: http://ec2-18-224-182-185.us-east-2.compute.amazonaws.com/
 
